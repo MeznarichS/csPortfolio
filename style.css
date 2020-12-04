@@ -1,0 +1,258 @@
+    h1 {
+      text-align:center;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 1.75em;
+    }
+
+    h2 {
+      color:darkslateblue;
+      font-family: 'Gochi Hand', cursive;
+    }
+
+    h3 {
+      color:darkslateblue;
+      font-family: 'Bad Script', cursive;
+      text-align: center;
+      font-size: 2em;
+    }
+
+
+    #aboutMe {
+      background-color: powderblue;
+    }
+
+    
+    #bannerimg {
+      width:100%;
+    }
+
+
+#main-nav {
+    margin-top: 2px;
+    text-align: center;
+    
+}
+
+#main-nav a {
+    background: darkslateblue;
+    
+    display: flex;
+    /*border: 5px solid rgb(0, 71, 163);*/
+    /*border: 5px solid midnightblue;
+    padding: 20px;
+    justify-content: center;
+    */
+
+    text-align: center;
+    padding: 20px;
+    border: 3px solid whitesmoke;
+
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 28px;
+}
+
+#main-nav a:hover {
+    background: rgb(57, 49, 109);
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    width: 250px;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+#aboutMePic {
+      border: 10px solid plum;
+      width:100%;
+    }
+
+p {
+ font-family: 'Nunito' sans-serif;
+}
+
+body {
+  /*background-color: honeydew;*/
+  background-color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+    /*border: 5px solid rgb(0, 71, 163);*/
+    /*border: 5px solid midnightblue;*/
+    /*border: 8px inset rgb(91, 91, 245);*/
+    padding: 10px;
+    justify-content: center;
+}
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 26px;
+}
+.box {
+    flex-grow: 2;
+    /*background: rgb(1, 53, 121);*/
+    background: midnightblue;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    border: 0px solid whitesmoke;
+}
+
+
+.menu2 {
+    display: flex;
+    /*border: 5px solid rgb(0, 71, 163);*/
+    /*border: 5px solid midnightblue;*/
+    padding: 10px;
+    justify-content: center;
+}
+.menu2 a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 28px;
+}
+.box2 {
+    flex-grow: 2;
+    /*background: rgb(1, 53, 121);*/
+    background: rgb(218, 148, 218);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid whitesmoke;
+}
+.box3 {
+    flex-grow: 2;
+    /*background: rgb(1, 53, 121);*/
+    background: rgb(146, 218, 228);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid whitesmoke;
+}
+.box4 {
+    flex-grow: 2;
+    /*background: rgb(1, 53, 121);*/
+    background: rgb(255, 211, 172);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid whitesmoke;
+}
+
+
+
+
+/*page layout with flexbox*/
+.flexbox-container {
+    display: flex;
+    /*border: 5px solid darkslateblue;*/
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    /*background-color: darkslateblue;*/
+    
+
+}
+
+.flexbox-item {
+    /*border: 3px solid midnightblue;*/
+    /* how do you place text in the center of each box without changing the height of the box?*/
+    width: 200px;
+    min-height:100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    background-color: whitesmoke;
+}
+
+.flexbox-item-1 {
+    background-color: #ffdab9;
+    flex:1;
+}
+
+.flexbox-item-2 {
+    background-color: powderblue;
+    flex: 1;
+}
+
+.flexbox-item-3 {
+    background-color: plum;
+    flex:1;
+}
+
+/*invisible box!*/
+.flexbox-item-4 {
+      flex:1;
+}
+
+/*picture*/
+.flexbox-item-5 {
+  flex:0.4;
+  text-align: left;
+}
+
+
+/*js file formatting*/
+canvas {
+    border: 10px solid white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
